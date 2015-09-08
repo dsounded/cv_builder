@@ -8,7 +8,9 @@
         <:nav href="/">Home</:nav>
         <:nav href="/about">About</:nav>
         <:user_templates:menu />
-        <:nav href="/cv">Your CV</:nav>
+        {{ if Volt.current_user }}
+          <:nav href="/cv">Your CV</:nav>
+        {{ end }}
       </ul>
       <h3 class="text-muted">cv_builder</h3>
     </div>

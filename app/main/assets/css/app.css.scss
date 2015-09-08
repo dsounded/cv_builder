@@ -1,1 +1,26 @@
 // Place your apps css here
+.left{
+  float:left;
+  width: 50%;
+  height: 500px;
+  margin-top: 5px;
+}
+.right{
+  float:right;
+  border: 1px solid black;
+  width: 50%;
+  height: 500px;
+  margin-top: 5px;
+}
+
+.name{
+  font-size: 14px;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.technology{
+  font-size: 10px;
+  text-align: center;
+}

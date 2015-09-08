@@ -4,5 +4,26 @@
 
 
 <:Body>
-  <h1>CV</h1>
-  <p>{{ Volt.current_user.name }}</p>
+  <h3>Upload your CV in a few steps</h3>
+  <div class = "left">
+    <form e-submit="save">
+       <label>CV</label>
+       <div class="form-group">
+        <input class="form-control" type="text" value="{{ name }}" name="name"/>
+       </div>
+       <div class="form-group">
+         <select class="form-control" name="technology" value="{{ technology }}">
+           <option value=""></option>
+           <option value="Java">Java</option>
+           <option value="PHP">PHP</option>
+           <option value="Ruby">Ruby</option>
+           <option value="Python">Python</option>
+         </select>
+       </div>
+    </form>
+  </div>
+  <div class = "right">
+    <p class = "name">{{ name }}</p>
+    <p class = "technology">{{ technology }} {{ unless technology.empty? }} developer {{ end }}</p>
+  </div>
+
