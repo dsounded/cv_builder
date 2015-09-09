@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: djffib4tu
+  api_key: '856918528385516'
+  api_secret: gpz8nUkAQjK7nJmuErDrIvkwUe0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: djffib4tu
+  api_key: '856918528385516'
+  api_secret: gpz8nUkAQjK7nJmuErDrIvkwUe0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: djffib4tu
+  api_key: '856918528385516'
+  api_secret: gpz8nUkAQjK7nJmuErDrIvkwUe0
+  enhance_image_tag: true
+  static_image_support: false

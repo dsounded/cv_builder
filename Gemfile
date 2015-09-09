@@ -58,3 +58,7 @@ group :production do
   # Provides precompiled binaries for image compression
   gem 'image_optim_pack'
 end
+
+gem 'cloudinary', github: 'alexandred/cloudinary_gem'
+gem 'volt-upload', github: "alexandred/volt-upload"
+

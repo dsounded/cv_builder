@@ -8,6 +8,8 @@ class User < Volt::User
   field :technology
   field :sex
   field :skills
+  field :picture
+  attachment :picture
 
   validate login_field, unique: true, length: 8
   validate :email, email: true
