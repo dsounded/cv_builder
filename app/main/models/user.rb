@@ -7,6 +7,7 @@ class User < Volt::User
   field :name
   field :technology
   field :sex
+  field :skills
 
   validate login_field, unique: true, length: 8
   validate :email, email: true
