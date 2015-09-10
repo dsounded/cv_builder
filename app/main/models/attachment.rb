@@ -1,4 +1,4 @@
 class Attachment < StorageBase
-  default_container :db
-  saves :picture, for: :user, in: :db
+  default_container :cloudinary
+  saves :picture, for: :user, in: :cloudinary
 end

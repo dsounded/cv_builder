@@ -2,7 +2,7 @@ module Main
   class CvController < Volt::ModelController
 
     def build
-      self.model = Volt.current_user.then(&:buffer)
+      self.model = Volt.current_user
     end
 
     def add_skill

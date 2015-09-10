@@ -51,7 +51,7 @@
 
        <div class="form-group">
           <:upload:main collection="{{ model }}" attachment="picture"/>
-          {{ raw picture.then {|picture| "#{picture.url}" } }}
+          {{ raw picture.then {|picture| "#{picture.cloudinary_url(size: "50x50", gravity: "face", crop: "fill")}" } }}
 
        </div>
 
